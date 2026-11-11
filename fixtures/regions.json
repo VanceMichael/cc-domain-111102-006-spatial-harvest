@@ -1,0 +1,16 @@
+{
+  "ordinary": [
+    100,
+    35,
+    102,
+    37
+  ],
+  "crossing": [
+    179,
+    -1,
+    -179,
+    1
+  ],
+  "min_width": 0.01,
+  "request_budget": 40
+}
