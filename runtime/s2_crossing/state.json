@@ -1,0 +1,63 @@
+{
+  "fingerprint": "81aea00e96307652",
+  "config": {
+    "target": [
+      179,
+      -1,
+      -179,
+      1
+    ],
+    "min_width": 0.5,
+    "request_budget": 200,
+    "cap": 3,
+    "endpoint": "fixtures/points.json",
+    "crossing_antimeridian": true
+  },
+  "frame": [
+    179.0,
+    -1.0,
+    181.0,
+    1.0
+  ],
+  "root": "[179.0,-1.0,181.0,1.0]",
+  "nodes": {
+    "[179.0,-1.0,181.0,1.0]": {
+      "depth": 0,
+      "status": "complete",
+      "cell": [
+        179.0,
+        -1.0,
+        181.0,
+        1.0
+      ],
+      "reason": "not_truncated",
+      "point_ids": [
+        "seam-east",
+        "seam-west"
+      ]
+    }
+  },
+  "points": {
+    "seam-east": {
+      "id": "seam-east",
+      "lon": 180.0,
+      "lat": 0.0,
+      "source_cells": [
+        "[179.0,-1.0,181.0,1.0]"
+      ]
+    },
+    "seam-west": {
+      "id": "seam-west",
+      "lon": 180.0,
+      "lat": 0.0,
+      "source_cells": [
+        "[179.0,-1.0,181.0,1.0]"
+      ]
+    }
+  },
+  "conflicts": {},
+  "quarantine": [],
+  "imported_outside": [],
+  "requests_made": 2,
+  "budget_exhausted": false
+}

@@ -1,0 +1,128 @@
+{
+  "overall_status": "incomplete",
+  "config": {
+    "target_raw": [
+      100.0,
+      35.0,
+      102.0,
+      37.0
+    ],
+    "target_frame_unwrapped": [
+      100.0,
+      35.0,
+      102.0,
+      37.0
+    ],
+    "crossing_antimeridian": false,
+    "min_width_degrees": 1.0,
+    "request_budget": 2000,
+    "cap": 3,
+    "endpoint": "fixtures/dense.json",
+    "fingerprint": "99a82ab481d1d38f"
+  },
+  "summary": {
+    "unique_point_ids": 3,
+    "conflict_ids": 0,
+    "quarantined_points": 0,
+    "leaf_complete": 0,
+    "leaf_incomplete": 4,
+    "leaf_pending": 0,
+    "requests_made": 5,
+    "budget_exhausted": false,
+    "target_area_km2": 40009.83237245029,
+    "verified_area_km2": 0,
+    "unverified_area_km2": 40009.83237245029
+  },
+  "leaves": {
+    "complete": [],
+    "incomplete": [
+      {
+        "cell": [
+          100.0,
+          35.0,
+          101.0,
+          36.0
+        ],
+        "depth": 1,
+        "status": "incomplete",
+        "reason": "min_width_reached_truncated",
+        "area_km2": 10065.8780843686
+      },
+      {
+        "cell": [
+          100.0,
+          36.0,
+          101.0,
+          37.0
+        ],
+        "depth": 1,
+        "status": "incomplete",
+        "reason": "min_width_reached_truncated",
+        "area_km2": 9939.038101856546
+      },
+      {
+        "cell": [
+          101.0,
+          35.0,
+          102.0,
+          36.0
+        ],
+        "depth": 1,
+        "status": "incomplete",
+        "reason": "min_width_reached_truncated",
+        "area_km2": 10065.8780843686
+      },
+      {
+        "cell": [
+          101.0,
+          36.0,
+          102.0,
+          37.0
+        ],
+        "depth": 1,
+        "status": "incomplete",
+        "reason": "min_width_reached_truncated",
+        "area_km2": 9939.038101856546
+      }
+    ],
+    "pending": []
+  },
+  "outside_target_evidence": [],
+  "unverified_regions": [
+    [
+      100.0,
+      35.0,
+      101.0,
+      36.0
+    ],
+    [
+      100.0,
+      36.0,
+      101.0,
+      37.0
+    ],
+    [
+      101.0,
+      35.0,
+      102.0,
+      36.0
+    ],
+    [
+      101.0,
+      36.0,
+      102.0,
+      37.0
+    ]
+  ],
+  "conflicts": [],
+  "quarantine": [],
+  "evidence_cells": 5,
+  "reason_dictionary": {
+    "not_truncated": "响应未截断，框内点位已完整证实（可能为空，空即经证实的无观测区域）",
+    "min_width_reached_truncated": "已到最小格宽仍被截断，该精确区域尚未证实覆盖，不计为空地",
+    "min_height_reached_truncated": "纬度方向已到最小尺寸仍被截断，同上",
+    "max_depth_reached_truncated": "触及最大深度兜底，停止分裂，区域未证实",
+    "pending_resumable": "预算或中断导致未查询，证据落盘后可原样续采",
+    "outside_target": "复用证据中的查询框不落在当前目标范围内，不参与本次覆盖统计"
+  }
+}

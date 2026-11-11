@@ -1,0 +1,146 @@
+{
+  "fingerprint": "8b038a5c0b168933",
+  "config": {
+    "target": [
+      100,
+      35,
+      101,
+      36
+    ],
+    "min_width": 0.1,
+    "request_budget": 200,
+    "cap": 3,
+    "endpoint": "fixtures/conflict.json",
+    "crossing_antimeridian": false
+  },
+  "frame": [
+    100.0,
+    35.0,
+    101.0,
+    36.0
+  ],
+  "root": "[100.0,35.0,101.0,36.0]",
+  "nodes": {
+    "[100.0,35.0,101.0,36.0]": {
+      "depth": 0,
+      "status": "split",
+      "cell": [
+        100.0,
+        35.0,
+        101.0,
+        36.0
+      ],
+      "children": [
+        "[100.0,35.0,100.5,35.5]",
+        "[100.5,35.0,101.0,35.5]",
+        "[100.0,35.5,100.5,36.0]",
+        "[100.5,35.5,101.0,36.0]"
+      ]
+    },
+    "[100.0,35.0,100.5,35.5]": {
+      "depth": 1,
+      "status": "complete",
+      "cell": [
+        100.0,
+        35.0,
+        100.5,
+        35.5
+      ],
+      "reason": "not_truncated",
+      "point_ids": [
+        "c0"
+      ]
+    },
+    "[100.5,35.0,101.0,35.5]": {
+      "depth": 1,
+      "status": "complete",
+      "cell": [
+        100.5,
+        35.0,
+        101.0,
+        35.5
+      ],
+      "reason": "not_truncated",
+      "point_ids": [
+        "c2"
+      ]
+    },
+    "[100.0,35.5,100.5,36.0]": {
+      "depth": 1,
+      "status": "complete",
+      "cell": [
+        100.0,
+        35.5,
+        100.5,
+        36.0
+      ],
+      "reason": "not_truncated",
+      "point_ids": []
+    },
+    "[100.5,35.5,101.0,36.0]": {
+      "depth": 1,
+      "status": "complete",
+      "cell": [
+        100.5,
+        35.5,
+        101.0,
+        36.0
+      ],
+      "reason": "not_truncated",
+      "point_ids": [
+        "c1",
+        "c1"
+      ]
+    }
+  },
+  "points": {
+    "c0": {
+      "id": "c0",
+      "lon": 100.2,
+      "lat": 35.2,
+      "source_cells": [
+        "[100.0,35.0,101.0,36.0]",
+        "[100.0,35.0,100.5,35.5]"
+      ]
+    },
+    "c1": {
+      "id": "c1",
+      "lon": 100.8,
+      "lat": 35.8,
+      "source_cells": [
+        "[100.0,35.0,101.0,36.0]",
+        "[100.5,35.5,101.0,36.0]"
+      ]
+    },
+    "c2": {
+      "id": "c2",
+      "lon": 100.9,
+      "lat": 35.1,
+      "source_cells": [
+        "[100.5,35.0,101.0,35.5]"
+      ]
+    }
+  },
+  "conflicts": {
+    "c1": [
+      {
+        "lon": 100.8,
+        "lat": 35.8,
+        "source_cells": [
+          "[100.0,35.0,101.0,36.0]"
+        ]
+      },
+      {
+        "lon": 100.6,
+        "lat": 35.6,
+        "source_cells": [
+          "[100.0,35.0,101.0,36.0]"
+        ]
+      }
+    ]
+  },
+  "quarantine": [],
+  "imported_outside": [],
+  "requests_made": 5,
+  "budget_exhausted": false
+}
